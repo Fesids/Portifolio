@@ -1,0 +1,40 @@
+@use "variables";
+
+
+.navbarLogo{
+    background-color: variables.$bl-bg;
+    color: variables.$bl-bg;
+    //height: 35%;
+    height: 165px;
+    //width: 25%;
+    width: 360px;
+    margin-bottom: 2%;
+    
+
+    img{
+        height: 100%;
+        width: 100%;
+
+    }
+}
+
+/*@media (max-width: 1196px){
+    .navbarLogo{
+        width: 27%;
+    }
+}
+
+
+@media (max-width: 870px) {
+   
+    .navbarLogo{
+        width: 33%;
+    }
+}
+
+@media (max-width: 700px) {
+    .navbarLogo{
+        width: 55%;
+    }
+         
+ }*/

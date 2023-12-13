@@ -1,0 +1,426 @@
+@use 'variables';
+
+#aboutMe {
+    display: flex;
+    justify-content: center;
+    background-color: variables.$bl-bg;
+    section{
+        width: 90%;
+        height: 100%;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        p {
+            text-align: justify;
+            color: variables.$wt-bg;
+            font-weight: 300;
+            width: 70%;
+            font-size: 22px;
+            font-weight: 400;
+        }
+           
+        h2{
+            width: 100%;
+            font-family:sans-serif; 
+            margin: 24px auto;
+            text-align: center;
+            font-size: 72px;
+            
+            background: variables.$gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        
+        
+        }
+    }
+}
+/*.timeline::after {
+    content: ""; 
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: inherit; 
+}
+
+.timeline{
+    list-style: none;
+    position: relative;
+    width: 5px;
+    height: 900px; 
+    //margin: 0 auto; 
+    //padding-top: 5rem;
+    background: red;
+}*/
+
+
+.expirienceContainer{
+   
+    color: variables.$wt-bg;
+    width: 90%;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 3%;
+    
+    .jobTitle{
+        font-size: 26px;
+    }
+
+    .jobTime{
+        margin-top: 1.5%;
+    }
+    
+    .actualJobDescription{
+        background-color: variables.$bl-bg;
+        padding: 12px 25px;
+        border-radius: 10px;
+        margin-top: 2.7%;
+    }
+
+    .pastJobDescription{
+        background: variables.$grey-bg;
+        padding: 12px 0px;
+        border-radius: 10px;
+        margin-top: 2.7%;
+    }
+}
+
+.expiriences{
+    background-color: variables.$bl-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    .expienceContent{
+        width: 70%;
+        height: auto;
+        padding-top: 48px;
+        padding-left: 120px;
+        padding-bottom: 48px;
+        display: inline-block;
+        overflow: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        box-shadow: rgb(8, 8, 8) 6px 2px 20px 40px;
+        border-radius: 32px;
+        background: variables.$grey-bg;
+        margin-top: 24px;
+        margin-bottom: 26px;
+
+        .expiriencesContainer{
+            margin-top: 5%;
+            
+        }
+    }
+
+    
+}
+
+.projectContainer{
+    background-color: variables.$wt-bg;
+    padding: 20px 15px;
+    margin: 5px 7px;
+    border-radius: 4px;
+    display: grid;
+    
+
+    .language{
+        display: inline-block;
+       
+        .wrapper{
+            display: inline-block;
+            background-color: variables.$vio-bg;
+            width: auto;
+            border-radius: 4px;
+            color: variables.$wt-bg;
+            font-size: 15px;
+            padding: 7px 5px;
+            margin-top: 4%;
+            font-weight: 600;
+        }
+    }
+
+    .icons{
+        display: flex;
+        justify-content: space-between;
+
+        .mark{
+            display: flex;
+            //border: 2px solid green;
+            width: 90%;
+
+
+            a{
+                text-decoration: none;
+                margin-left: 2%;
+                font-size: 15px;
+                //border: 2px solid blue;
+                width: 100%;
+                font-weight: 600;
+                color: black;
+            }
+        }
+    }
+
+    .description{
+        margin-top: 6%;
+        height: 50%;
+        text-align: justify;
+        width: 90%;
+        word-spacing: 0px;
+        letter-spacing: 1.2px;
+        
+        white-space: pre-wrap;
+    }
+}
+
+.projects{
+    background-color: variables.$bl-bg;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+
+    .projectsContainer{
+       
+        width: 85%;
+        height: 75%;
+        margin-top: 2%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+}
+
+
+////// ###### //////
+
+@media (max-width: 1196px){
+
+    #aboutMe{
+        grid-row: 1;
+
+        section{
+            width: 100%;
+            p{
+                font-size: 19px;
+            }
+
+            h2{
+                font-size: 50px;
+            }
+        }
+    }
+
+    
+
+    .expiriences{
+        background-color: variables.$bl-bg;
+
+       
+        .expienceContent{
+            padding-left: 105px;
+            width: 85%;
+            box-shadow: rgb(8, 8, 8) 6px 2px 17px 33px;
+        
+        }
+
+        .expiriencesContainer{
+           
+        }
+    
+
+        .expirienceContainer{
+            
+            .jobTitle{
+                font-size: 21px;
+            }
+    
+            .jobTime{
+                font-size: 18px;
+            }
+            .actualJobDescription{
+                background-color: variables.$bl-bg;
+                padding: 12px 25px;
+                border-radius: 10px;
+                margin-top: 2.7%;
+                font-size: 16px;
+            }
+        
+            .pastJobDescription{
+                background: variables.$grey-bg;
+                padding: 12px 0px;
+                border-radius: 10px;
+                margin-top: 2.7%;
+                font-size: 16px;
+            }
+        }
+    }
+
+
+   .projects{
+        
+        .projectsContainer{
+            
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+   }
+}
+
+
+@media (max-width: 870px) {
+
+    #aboutMe{
+        grid-row: 1;
+
+        section{
+            width: 100%;
+            p{
+                font-size: 17px;
+            }
+
+            h2{
+                font-size: 47px;
+            }
+        }
+    }
+
+    .expiriences{
+        background-color: variables.$bl-bg;
+
+       
+        .expienceContent{
+            padding-left: 75px;
+            width: 85%;
+            box-shadow: rgb(8, 8, 8) 6px 2px 10px 20px;
+        
+        }
+
+        .expiriencesContainer{
+           
+        }
+    
+
+        .expirienceContainer{
+            
+            .jobTitle{
+                font-size: 27px;
+            }
+    
+            .jobTime{
+                font-size: 16px;
+            }
+            .actualJobDescription{
+                background-color: variables.$bl-bg;
+                padding: 12px 25px;
+                border-radius: 10px;
+                margin-top: 2.7%;
+                font-size: 14px;
+            }
+        
+            .pastJobDescription{
+                background: variables.$grey-bg;
+                padding: 12px 0px;
+                border-radius: 10px;
+                margin-top: 2.7%;
+                font-size: 14px;
+            }
+        }
+    }
+
+
+
+    .projects{
+
+        .projectsContainer{
+                
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+        
+}
+
+
+
+@media (max-width: 700px) {
+
+    #aboutMe{
+        grid-row: 1;
+
+        section{
+            width: 100%;
+            
+            p{
+                font-size: 14px;
+                width: 92%;
+            }
+
+            h2{
+                font-size: 34px;
+            }
+        }
+    }
+
+    .expirienceContainer{
+        
+        .jobTitle{
+            font-size: 22px;
+        }
+
+        .jobTime{
+            font-size: 14px;
+        }
+        .actualJobDescription{
+            background-color: variables.$bl-bg;
+            padding: 12px 25px;
+            border-radius: 10px;
+            margin-top: 2.7%;
+            font-size: 12px;
+        }
+    
+        .pastJobDescription{
+            background: variables.$grey-bg;
+            padding: 12px 0px;
+            border-radius: 10px;
+            margin-top: 2.7%;
+            font-size: 12px;
+        }
+    }
+    .expiriences{
+        background-color: variables.$bl-bg;
+        .expienceContent{
+            margin-top: 11%;
+            margin-bottom: 13%;
+            padding-left: 65px;
+            width: 100%;
+            box-shadow: rgb(8, 8, 8) 6px 2px 10px 20px;
+        
+        }
+
+        .expiriencesContainer{
+            
+        }
+    }
+
+
+    .projects{
+        background-color: black;
+
+        .projectsContainer{
+                
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+        
+}

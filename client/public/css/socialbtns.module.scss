@@ -1,0 +1,29 @@
+.socialBtns{
+    //background-color: green;
+    width: 27%;
+    height: 17%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    a{
+        //background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        
+
+        svg{
+            width: 70%;
+            height: 50%;
+        }
+        
+    }
+}
+
+@media (max-width: 700px) {
+    .socialBtns{
+        width: 70%;
+    }
+         
+ }

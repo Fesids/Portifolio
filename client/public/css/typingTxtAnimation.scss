@@ -1,0 +1,44 @@
+.word-container{
+    //background-color: aqua;
+    width: 50%;
+    height: 10%;
+    //margin-top: 2%;
+    color: white;
+    font: 700 normal 2em;
+    font-size: 33px;
+    //text-shadow: 5px 1px #222324, 1px 1px #222324, 1px 2px #222324;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1.9px;
+
+    @media (max-width: 1196px){
+        width: 70%;
+        font: 500 normal 1.8em;
+    }
+
+    @media (max-width: 870px){
+        width: 75%;
+        font: 500 normal 1.6em;
+    }
+
+    @media (max-width: 710px){
+        font: 400 normal 1.6em 'tahoma';
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+    }
+
+    @media (max-width: 450px){
+        font: 400 normal 1.2em 'tahoma';
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+    }
+    
+}
+
+.word{
+    border-right: 2px solid white;
+}

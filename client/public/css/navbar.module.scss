@@ -1,0 +1,26 @@
+@use 'variables';
+
+.navbar{
+    background-color: variables.$bl-bg;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    //grid-template-column: 1fr 1fr;
+    align-items: center;
+    flex-direction: column;
+    grid-area: "navbar";
+
+    @media (max-width: 1196px){
+        grid-row: 1;
+    }
+    
+    @media (max-width: 870px) {
+        //background-color: red;
+         grid-row: 1;
+      }
+
+    @media (max-width: 700px) {
+       //background-color: red;
+        grid-row: 1;
+     }
+}
